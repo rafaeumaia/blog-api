@@ -8,3 +8,5 @@ urlpatterns = [
 apps_urlpatterns = [
     path('post/', include('apps.post.urls')),
 ]
+
+urlpatterns.extend(apps_urlpatterns)
